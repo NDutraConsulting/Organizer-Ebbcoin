@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        >
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_marginTop="-30dp"
+            android:background="@drawable/rounded_bg_no_stroke"
+            android:elevation="8dp"
+            >
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Planner"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:gravity="left"
+                android:id="@+id/org_name"
+                android:background="@color/menuBGColor"
+                android:layout_weight="0.56"
+                android:paddingTop="40dp"
+                android:layout_marginLeft="20dp" />
+
+
+            <LinearLayout
+                android:layout_height="fill_parent"
+                android:onClick="saveClick"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:paddingRight="30dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:text="Save"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:layout_weight="1"
+                    android:layout_marginTop="45dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/menuDarkButton"
+                    android:background="@drawable/rounded_menu_button"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_bg_color_2f2d2e"
+            android:id="@+id/active_scroll_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/active_scroll_linear_layout">
+
+
+
+                <TextView
+                    android:text="Event Title"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    android:textSize="25sp"
+                    android:id="@+id/event_title_edit_text"
+                    android:padding="10dp"
+                    android:layout_weight=".7"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/menuBGColor"
+                    />
+
+
+
+                <TextView
+                    android:text="Date"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    android:textSize="25sp"
+                    android:id="@+id/date_edit_text"
+                    android:padding="10dp"
+                    android:layout_weight=".7"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/menuBGColor"
+
+                    />
+
+
+
+
+                <TextView
+                    android:text="Time"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    android:textSize="25sp"
+                    android:id="@+id/time_edit_text"
+                    android:padding="10dp"
+                    android:layout_weight=".7"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/menuBGColor"
+                    />
+
+
+
+                <TextView
+                    android:text="Description of Duties"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="25sp"
+                    android:id="@+id/description_edit_text"
+                    android:padding="10dp"
+                    android:layout_weight=".7"
+                    android:layout_marginLeft="20dp"
+                    android:height="90dp"
+                    android:inputType="textNoSuggestions"
+                    android:lines="3"
+                    android:minLines="1"
+                    android:maxLines="3"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/menuBGColor"
+
+                    />
+
+                <TextView
+                    android:text="Reward"
+                    android:gravity="left"
+                    android:textSize="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp" />
+
+                <Spinner
+                    android:id="@+id/reward_type_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+
+                    />
+
+
+                <TextView
+                    android:text="Options"
+                    android:gravity="left"
+                    android:textSize="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp" />
+
+                <Spinner
+                    android:id="@+id/options_type_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+
+                    />
+
+                <TextView
+                    android:text="Set Location"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_bg"
+                    android:textSize="40sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:onClick="launchMap"
+                    />
+
+
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="480dp"
+                    class="com.google.android.gms.maps.SupportMapFragment" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:elevation="0dp"
+    android:background="#2f2d2e"
+
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/rounded_bg_no_stroke"
+        android:elevation="8dp"
+        >
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/organization_name"
+            android:textSize="30dp"
+            android:textColor="#FFF"
+            android:gravity="left"
+            android:id="@+id/org_name"
+            android:background="@color/menuBGColor"
+            android:layout_weight="0.56"
+            android:paddingTop="40dp"
+            android:layout_marginLeft="20dp" />
+
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:onClick="onClick"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingLeft="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/profile_icon"
+            android:id="@+id/profile_button"
+            android:background="@color/menuBGColor"
+            android:paddingTop="50dp"
+            android:onClick="onClick"
+            android:clickable="true"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

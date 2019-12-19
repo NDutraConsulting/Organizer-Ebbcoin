@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ebbcoin.organizer.organizerebbcoin.Activities.PlannerViewActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_info_bg"
+        android:weightSum="1"
+        android:layout_height="260dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:text="South City Community Garden"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:text="Fri, December 02, 2016"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="1:00pm - 3:00pm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="Weeding and Watering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="7dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Reward: 3 Ebb Coins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Reward"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tename"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="Launch"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded_bg_no_stroke"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="4dp"
+                    />
+
+                <TextView
+                    android:id="@+id/titlename"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="Edit"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_bg_no_stroke"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="4dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

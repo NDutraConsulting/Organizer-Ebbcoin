@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="#2f2d2e">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="537dp"
+        android:background="@drawable/main_bg_color_2f2d2e">
+
+        <fragment android:name="com.ebbcoin.organizer.organizerebbcoin.Fragments.MenuBar"
+            android:id="@+id/MenuBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/menu_bar_view" />
+
+        <TextView
+            android:id="@+id/resources_button"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+
+            android:text="Resources"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_bg"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+
+            />
+
+        <TextView
+            android:id="@+id/planner_button"
+            android:layout_width="match_parent"
+            android:text="Planner"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_bg"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="127dp"
+            />
+
+        <fragment
+            android:layout_width="match_parent"
+            android:name="com.ebbcoin.organizer.organizerebbcoin.Fragments.UserInfo"
+            android:id="@+id/fragment3"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_user_info"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
